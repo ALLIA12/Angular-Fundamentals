@@ -1,1 +1,13 @@
-<p>home works!</p>
+<app-header></app-header>
+<p appHighlight>home works!</p>
+<div *ngFor="let person of persons">
+    <h2>{{ person.name }}</h2>
+    <p><strong>Age:</strong> {{ person.age }}</p>
+    <p><strong>Email:</strong> {{ person.email }}</p>
+    <p><strong>Major:</strong> {{ person.major }}</p>
+    <hr>
+  </div>
+  
+<router-outlet></router-outlet>
+
+<app-footer></app-footer>

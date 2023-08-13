@@ -1,0 +1,6 @@
+[
+    { "name": "John Doe", "age": 25, "email": "john.doe@example.com", "major": "Computer Science" },
+    { "name": "Jane Smith", "age": 30, "email": "jane.smith@example.com", "major": "Biology" },
+    { "name": "Alice Johnson", "age": 22, "email": "alice.johnson@example.com", "major": "Mathematics" }
+  ]
+  
