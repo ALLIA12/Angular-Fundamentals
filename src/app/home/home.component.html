@@ -1,13 +1,20 @@
+<html>
+<style>
+    h3 {
+        display: flex;
+        justify-content: left;
+        padding-left: 10px;
+        align-items: center;
+        min-height: 2vh;
+        margin: 0;
+    }
+</style>
 <app-header></app-header>
-<p appHighlight>home works!</p>
-<div *ngFor="let person of persons">
-    <h2>{{ person.name }}</h2>
-    <p><strong>Age:</strong> {{ person.age }}</p>
-    <p><strong>Email:</strong> {{ person.email }}</p>
-    <p><strong>Major:</strong> {{ person.major }}</p>
-    <hr>
-  </div>
-  
-<router-outlet></router-outlet>
+<app-sidebar></app-sidebar>
+<h3>
+    The people here are:
+</h3>
+<app-person></app-person>
+<app-footer> </app-footer>
 
-<app-footer></app-footer>
+</html>

@@ -1,0 +1,22 @@
+<style>
+    /* styles.css */
+
+    /* Style for the container div */
+    .person-container {
+        margin: 10px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    /* Optional: Additional styling for better spacing */
+    .person-details {
+        margin-top: 5px;
+    }
+</style>
+<div class="person-container" *ngFor="let person of people">
+    <span appHighlight>
+        {{ person.first_name }} {{ person.last_name }},
+        {{ person.gender }}
+    </span>
+</div>
