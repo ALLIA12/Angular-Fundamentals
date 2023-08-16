@@ -1,18 +1,17 @@
 import { Component } from '@angular/core';
-import { DataServiceTempService } from 'src/app/core/data-service-temp.service';
+import { DataService } from 'src/app/core/data.service';
 
 @Component({
   selector: 'app-person',
   templateUrl: './person.component.html',
   styleUrls: ['./person.component.css'],
-  providers: [DataServiceTempService]
+  providers: [DataService],
 })
 export class PersonComponent {
   people: any[] = [];
-  constructor(private service: DataServiceTempService) {
-  }
+  constructor(private service: DataService) {}
   ngOnInit(): void {
-    this.service.getPersonsData().subscribe(data => {
+    this.service.getPersonsData().subscribe((data: any[]) => {
       this.people = data;
     });
   }
