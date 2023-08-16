@@ -1,0 +1,19 @@
+#title2 {
+    margin-top: 15px;
+    text-align: center;
+  }
+
+  #body2 {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    text-align: center;
+  }
+
+  .card{
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px 20px 15px 5px;
+   border: #dec57f; 
+    border-color: #236377;
+  }

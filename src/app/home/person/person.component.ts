@@ -12,7 +12,7 @@ export class PersonComponent {
   constructor(private service: DataService) {}
   ngOnInit(): void {
     this.service.getPersonsData().subscribe((data: any[]) => {
-      this.people = data;
+      this.people = data.slice(0, 10);
     });
   }
 }

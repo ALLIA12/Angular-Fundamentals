@@ -1,0 +1,9 @@
+h3 {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding-left: 10px;
+    align-items: center;
+    min-height: 2vh;
+    margin: 0;
+}

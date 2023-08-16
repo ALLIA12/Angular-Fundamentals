@@ -1,0 +1,22 @@
+/* Style for the centered container */
+.center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* Optional: To center vertically as well */
+    flex-wrap: wrap;
+    /* Allow flex items to wrap onto multiple lines */
+}
+
+/* Style for the container div */
+.person-container {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    min-width: 300px;
+}
+
