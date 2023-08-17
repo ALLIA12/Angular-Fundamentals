@@ -12,6 +12,24 @@ button {
     cursor: pointer;
 }
 
+.highlight {
+    background-color: #f39c12;
+    /* Change the color as desired */
+}
+
+.stop {
+    background-color: #070500;
+    cursor: not-allowed;
+    /* Change the color as desired */
+}
+
+/* Add the styles for the filtered event message */
+.filtered-event-message {
+    font-size: 14px;
+    color: #f39c12;
+    /* Change the color as desired */
+}
+
 p {
     font-size: 18px;
     margin-top: 10px;

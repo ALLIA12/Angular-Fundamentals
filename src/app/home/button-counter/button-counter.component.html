@@ -1,4 +1,12 @@
 <div class="button-container">
-    <button (click)="increaseCounter()">Increase Counter</button>
-    <p>Counter value: {{ counter }}</p>
+    <button (click)="increaseCounter($event)" [class]="counter >= 5 ? counter == 10 ? 'stop' :'highlight'  : ''"
+        [disabled]="counter >= 10">
+        Increase Counter
+    </button>
+    <p [style.color]="counter >= 5 ? 'green' : 'black'">
+        Counter value: {{ counter }}
+    </p>
+    <p *ngIf="increasedByFilteredEvent" class="filtered-event-message">
+        Counter increased by filtered event (Shift key).
+    </p>
 </div>
