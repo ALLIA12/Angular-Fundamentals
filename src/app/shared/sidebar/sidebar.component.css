@@ -1,10 +1,10 @@
-        /* Float the paragraph element to the right */
-        p {
-            float: right;
-            position: fixed;
-            top: 50%;
-            /* Position from the top */
-            right: 0;
-            transform: translate(0, -50%);
-            /* Center vertically */
-        }
+/* Float the paragraph element to the right */
+p {
+    float: right;
+    position: fixed;
+    top: 50%;
+    /* Position from the top */
+    right: 0;
+    transform: translate(0, -50%);
+    /* Center vertically */
+}

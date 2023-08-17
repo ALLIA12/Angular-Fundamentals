@@ -3,6 +3,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './home/about/about.component';
 import { ContactComponent } from './home/contact/contact.component';
+import { UserProfileComponent } from './home/user-profile/user-profile.component';
+import { ButtonCounterComponent } from './home/button-counter/button-counter.component';
 
 const routes: Routes = [
   {
@@ -21,6 +23,14 @@ const routes: Routes = [
   {
     path: 'contact',
     component: ContactComponent
+  },
+  {
+    path: 'userProfile',
+    component: UserProfileComponent
+  },
+  {
+    path: 'buttonCounter',
+    component: ButtonCounterComponent
   }
 ];
 

@@ -1,0 +1,9 @@
+<div class="input-container">
+    <label for="inputField">Type your name:</label>
+    <input type="text" id="inputField" [(ngModel)]="userName" />
+</div>
+
+<div class="greeting">
+    <p>Hello, {{ userName }}!</p>
+    <p>!{{ userName | reverseString }} ,olleH</p>
+</div>

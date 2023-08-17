@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
@@ -9,6 +8,7 @@ import { HeaderComponent } from './shared/header/header.component';
 import { SidebarComponent } from './shared/sidebar/sidebar.component';
 import { HighLightDirective } from './core/high-light.directive';
 import { HomeComponent } from './home/home.component';
+import { HomeModule } from './home/home.module';
 import { PersonComponent } from './home/person/person.component';
 
 @NgModule({
@@ -19,12 +19,13 @@ import { PersonComponent } from './home/person/person.component';
     FooterComponent,
     SidebarComponent,
     HighLightDirective,
-    PersonComponent
+    PersonComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    HomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
